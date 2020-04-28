@@ -6,6 +6,7 @@
     padding: 5rem 0;
 
     .main-card {
+        min-height: calc(100vh - 10rem);
         .profile-picture {
             display: block;
             max-width: 240px;

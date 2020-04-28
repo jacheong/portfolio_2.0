@@ -1,43 +1,52 @@
 import { InjectionToken } from '@angular/core';
 import { SkillService } from './skill.service';
 
-interface Skill {
+export interface Skill {
     name: string;
     info: string;
+    path: string;
 }
 
 export const SKILL_SERVICE_CONFIG: Skill[] = [
     {
         name: 'Javascript',
-        info: ''
+        info: '',
+        path: 'assets/images/js-logo.png'
     },
     {
         name: 'jQuery',
-        info: ''
+        info: '',
+        path: 'assets/images/jquery-logo.png'
     },
     {
         name: 'Typescript',
-        info: ''
+        info: '',
+        path: 'assets/images/typescript-logo.png'
     },
     {
         name: 'RxJS',
-        info: ''
+        info: '',
+        path: 'assets/images/rxjs-logo.png'
     },
     {
         name: 'HTML5',
-        info: ''
+        info: '',
+        path: 'assets/images/html5-logo.jpg'
     },
     {
-        name: 'SCSS',
-        info: ''
+        name: 'SASS',
+        info: '',
+        path: 'assets/images/sass-logo.png'
     },
     {
         name: 'Webpack',
-        info: ''
+        info: '',
+        path: 'assets/images/webpack-logo.png'
     },
     {
         name: 'Angular',
-        info: ''
+        info: '',
+        path: 'assets/images/angular-logo.svg'
     },
     {
         name: 'Javascript',
@@ -49,6 +58,21 @@ export const SKILL_SERVICE_CONFIG: Skill[] = [
     },
     {
         name: 'Express',
+        info: ''
+    },
+    {
+        name: 'NgRx',
+        info: ''
+    },
+    {
+        name: 'Angular Elements',
+        info: ''
+    }, {
+        name: 'PWA',
+        info: ''
+    },
+    {
+        name: 'Redux',
         info: ''
     }
 ];

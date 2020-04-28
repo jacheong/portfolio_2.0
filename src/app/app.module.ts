@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +11,7 @@ import { SkillsComponent } from './feature/skills/skills.component';
 import { AboutComponent } from './feature/about/about.component';
 import { SKILL_SERVICE_CONFIG_TOKEN, SKILL_SERVICE_CONFIG } from './services/skills.config';
 import { SkillService } from './services/skill.service';
+import { CircleModule } from './shared/circle/circle.module';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,16 @@ import { SkillService } from './services/skill.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     CardModule,
+    CircleModule,
     MatTabsModule
   ],
   providers: [
     SkillService,
     { provide: SKILL_SERVICE_CONFIG_TOKEN, useValue: SKILL_SERVICE_CONFIG }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }

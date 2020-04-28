@@ -1,5 +1,12 @@
 @import './styles/variables';
 @import './styles/typography';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: $light-grey;
+}

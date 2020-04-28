@@ -5,10 +5,17 @@
     grid-auto-flow: dense;
 }
 
-.card {
-    border: solid 1px red;
-    &:nth-of-type(2) {
-        grid-column: span 2;
-        grid-row:  span 2;
-    }
+// .card {
+//     border: solid 1px red;
+//     &:nth-of-type(2) {
+//         grid-column: span 2;
+//         grid-row:  span 2;
+//     }
+// }
+
+.grid-item {
+    grid-row: span 1;
+    grid-column: span 1;
+    display: flex;
+    align-content: center;
 }
