@@ -1,0 +1,38 @@
+<div id="main-container">
+    <app-card class="main-card">
+          <img class="card-image profile-picture" src="assets/images/headshot.jpg" alt="Profile picture">
+    <div class="card-content">
+        <div class="main-heading-container">
+            <span class="main-title heading-1">Justin Cheong</span>
+            <div class="social-media-container">
+              <a mat-button (click)="openLink('https://www.instagram.com/jacheong_91/', '_blank')">
+                <img class="social-media-profile" src="assets/images/instagram.svg" alt="Instagram logo">
+              </a>
+              <a mat-button (click)="openLink('https://www.linkedin.com/in/justin-cheong-96192a90/', '_blank')">
+                <img class="social-media-profile" src="assets/images/linkedin.svg" alt="Linkedin logo">
+              </a>
+            </div>
+            <span class="main-subtitle heading-4">UI Engineer at Cority with a passion for development in modern web technologies and weightlifting enthusiast</span>
+        </div>
+        <div class="main-body-content">
+            <mat-tab-group mat-stretch-tabs>
+                <mat-tab label="About Me">
+                  <ng-template matTabContent>
+                    <app-about></app-about>
+                  </ng-template>
+                </mat-tab>
+                <mat-tab label="Skills">
+                  <ng-template matTabContent>
+                    <app-skills></app-skills>
+                  </ng-template>
+                </mat-tab>
+                <mat-tab label="Contact Me">
+                  <ng-template matTabContent>
+                    <email-form-element></email-form-element>
+                  </ng-template>
+                </mat-tab>
+              </mat-tab-group>
+        </div>
+    </div>
+    </app-card>
+</div>

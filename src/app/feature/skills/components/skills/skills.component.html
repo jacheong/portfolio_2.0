@@ -1,0 +1,5 @@
+<div class="list-container">
+    <mat-list [@listAnimation]="skills.length">
+        <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+    </mat-list>
+</div>

@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openLink(url: string, attribute: string) {
+    window.open(url, attribute);
+  }
 }

@@ -1,0 +1,21 @@
+@import '../../../../../styles/variables';
+
+:host {
+    display: block;
+}
+
+.skill-image {
+    width: 240px;
+    height: 240px;
+    border-radius: 2rem;
+}
+
+.skill-name {
+    font-weight: 500 !important;
+    color: $med-grey;
+}
+
+.skill-experience {
+    color: $light-grey;
+    font-weight: 500 !important;
+}

@@ -1,0 +1,6 @@
+<mat-list-item (click)="toggleInfoVisibility()">
+    <img matListAvatar  [src]="skill.path" [alt]="skill.name">   
+    <h2 class="skill-name" matLine>{{skill.name}}</h2>
+    <span class="skill-experience" matLine>{{skill.experience}}</span>
+    <mat-icon *ngIf="skill?.isFavorite">favorite</mat-icon>
+</mat-list-item>
