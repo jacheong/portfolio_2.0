@@ -11,7 +11,7 @@ import { SkillsComponent } from './feature/skills/skills.component';
 import { AboutComponent } from './feature/about/about.component';
 import { SKILL_SERVICE_CONFIG_TOKEN, SKILL_SERVICE_CONFIG } from './services/skills.config';
 import { SkillService } from './services/skill.service';
-import { CircleModule } from './shared/circle/circle.module';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +19,14 @@ import { CircleModule } from './shared/circle/circle.module';
     HomeComponent,
     NotFoundComponent,
     SkillsComponent,
-    AboutComponent
+    AboutComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CardModule,
-    CircleModule,
     MatTabsModule
   ],
   providers: [

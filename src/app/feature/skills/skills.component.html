@@ -1,5 +1,5 @@
 <div class="grid">
-    <app-circle class="grid-item" *ngFor="let skill of skills; let i = index;">
-        <span>{{skill.name}}</span>
-    </app-circle>
+    <app-skill class="grid-item" *ngFor="let skill of skills; let i = index;"
+        [skill]="skill">
+    </app-skill>
 </div>

@@ -1,0 +1,8 @@
+<div class="skill-container">
+    <img class="skill-image" *ngIf="skill?.path; else noImage" [src]="skill.path" [alt]="skill.name">
+    <ng-template #noImage>
+        <div class="no-image">
+            <span>{{skill.name}}</span>
+        </div>
+    </ng-template>
+</div>
