@@ -3,7 +3,7 @@ import { trigger, transition, style, animate, query, stagger } from '@angular/an
 export const ListAnimation = trigger('listAnimation', [
   transition('* <=> *', [
     query(':enter',
-      [style({ opacity: 0 }), stagger('100ms', animate('600ms ease-out', style({ opacity: 1 })))],
+      [style({ opacity: 0 }), stagger('100ms', animate('500ms ease-out', style({ opacity: 1 })))],
       { optional: true }
     ),
     query(':leave',

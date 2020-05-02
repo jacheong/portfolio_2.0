@@ -28,7 +28,11 @@
                 </mat-tab>
                 <mat-tab label="Contact Me">
                   <ng-template matTabContent>
-                    <email-form-element></email-form-element>
+                    <div class="email-container">
+                      <info-card numberofpanels="1">
+                        <email-form-element slot="body-0"></email-form-element>
+                      </info-card>
+                    </div>
                   </ng-template>
                 </mat-tab>
               </mat-tab-group>

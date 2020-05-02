@@ -1,5 +1,7 @@
 <div class="list-container">
-    <mat-list [@listAnimation]="skills.length">
-        <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
-    </mat-list>
+    <info-card numberofpanels="1">
+        <mat-list slot="body-0">
+            <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+        </mat-list>
+</info-card>
 </div>

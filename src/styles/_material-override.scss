@@ -1,1 +1,17 @@
+@import './variables';
 
+body {
+    background-color: $primary-color;
+}
+
+.mat-card {
+    border-radius: 3rem !important;
+    background-color: $primary-color !important;
+    box-shadow: 12px 12px 24px 0 $dark-shadow, -12px -12px 24px 0 $light-shadow;
+}
+
+@media (max-width: $desktop-width) {
+    .mat-card {
+        border-radius: 0 !important;
+    }
+}

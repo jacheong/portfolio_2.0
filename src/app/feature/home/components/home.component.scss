@@ -6,7 +6,6 @@
 	padding: 5rem 0;
 
 	.main-card {
-		min-height: calc(100vh - 10rem);
 		.profile-picture {
 			display: block;
 			max-width: 240px;
@@ -38,6 +37,15 @@
 		}
 		.main-body-content {
 			margin-top: 1rem;
+			.email-container {
+				padding: $padding-md;
+			}
 		}
+	}
+}
+
+@media (max-width: $desktop-width) {
+	#main-container {
+		padding: 0;
 	}
 }

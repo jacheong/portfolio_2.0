@@ -1,10 +1,5 @@
-.panel-avatar {
-    height: 36px;
-    width: 36px;
-    border-radius: 50%;
-}
+@import '../../../../../styles/variables';
 
-.panel-description {
-    align-self: center;
-    margin-left: 2rem;
+.list-container {
+    padding: $padding-md;
 }

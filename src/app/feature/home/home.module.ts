@@ -20,7 +20,6 @@ import { MatButtonModule } from '@angular/material/button';
     RouterModule,
     AboutModule,
     SkillsModule,
-    MatIconModule,
     MatButtonModule
   ],
   exports: [
