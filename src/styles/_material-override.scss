@@ -10,8 +10,12 @@ body {
     box-shadow: 12px 12px 24px 0 $dark-shadow, -12px -12px 24px 0 $light-shadow;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $mobile-width) {
     .mat-card {
         border-radius: 0 !important;
+        padding: 0 !important;
+        .mat-list-item-content {
+            padding: 0  !important;
+        }
     }
 }

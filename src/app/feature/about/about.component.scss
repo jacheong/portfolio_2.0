@@ -1,8 +1,17 @@
 @import '../../../styles/variables';
 
 .content-container {
-    padding: $padding-md;
+    padding: $padding-sm;
     .info-card {
         display: block;
+    }
+    .skills-title {
+        margin-left: $padding-sm;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .content-container {
+        padding: 0;
     }
 }

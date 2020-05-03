@@ -15,11 +15,9 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   imports: [
     CommonModule,
-    MatTabsModule,
     CardModule,
     RouterModule,
     AboutModule,
-    SkillsModule,
     MatButtonModule
   ],
   exports: [

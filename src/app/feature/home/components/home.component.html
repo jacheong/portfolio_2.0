@@ -15,27 +15,15 @@
             <span class="main-subtitle heading-4">UI Engineer at Cority with a passion for development in modern web technologies and weightlifting enthusiast</span>
         </div>
         <div class="main-body-content">
-            <mat-tab-group mat-stretch-tabs>
-                <mat-tab label="About Me">
-                  <ng-template matTabContent>
-                    <app-about></app-about>
-                  </ng-template>
-                </mat-tab>
-                <mat-tab label="Skills">
-                  <ng-template matTabContent>
-                    <app-skills></app-skills>
-                  </ng-template>
-                </mat-tab>
-                <mat-tab label="Contact Me">
-                  <ng-template matTabContent>
-                    <div class="email-container">
-                      <info-card numberofpanels="1">
-                        <email-form-element slot="body-0"></email-form-element>
-                      </info-card>
-                    </div>
-                  </ng-template>
-                </mat-tab>
-              </mat-tab-group>
+          <app-about></app-about>
+          <div class="email-container">
+            <info-card numberofpanels="1">
+              <span class="email-form-title" slot="title-0">
+                Contact Me
+              </span>
+              <email-form-element slot="body-0"></email-form-element>
+            </info-card>
+          </div>
         </div>
     </div>
     </app-card>

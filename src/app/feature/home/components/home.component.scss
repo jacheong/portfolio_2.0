@@ -40,14 +40,25 @@
 		.main-body-content {
 			margin-top: 1rem;
 			.email-container {
-				padding: $padding-md;
+				padding: $padding-sm;
+				.email-form-title {
+					margin-left: $padding-sm;
+				}
 			}
 		}
 	}
 }
 
-@media (max-width: $desktop-width) {
+	@media (max-width: $mobile-width) {
 	#main-container {
 		padding: 0;
+		.main-card {
+			.main-body-content {
+				margin-top: 1rem;
+				.email-container {
+					padding: $padding-sm 0;
+				}
+			}
+		}
 	}
 }
