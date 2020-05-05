@@ -7,8 +7,8 @@
 @include mat-core();
 
 // Define the default theme (same as the example above).
-$dark-primary: mat-palette($mat-indigo);
-$dark-accent:  mat-palette($mat-pink, A200, A100, A400);
+$dark-primary: mat-palette($mat-light-blue);
+$dark-accent:  mat-palette($mat-yellow, A200, A100, A400);
 $dark-app-theme:  mat-dark-theme($dark-primary, $dark-accent);
 
 // Include the default theme styles.
