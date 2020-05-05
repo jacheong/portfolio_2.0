@@ -1,3 +1,4 @@
+@import './theme.scss';
 @import './styles/variables';
 @import './styles/typography';
 @import './styles/material-override';
@@ -9,11 +10,4 @@ body {
 body {
 	margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-info-card {
-	.info-card {
-		background-color: $primary-color !important;
-		box-shadow: 12px 12px 24px 0 $dark-shadow, -12px -12px 24px 0 $light-shadow;	
-	}
 }

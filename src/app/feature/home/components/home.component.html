@@ -1,8 +1,9 @@
 <div id="main-container">
-    <app-card class="main-card">
-          <img class="card-image profile-picture" src="assets/images/headshot.jpg" alt="Profile picture" loading="eager">
-    <div class="card-content">
-        <div class="main-heading-container">
+    <info-card numberofpanels="1">
+      <div class="main-card" slot="body-0">
+        <img class="card-image profile-picture" src="assets/images/headshot.jpg" alt="Profile picture" loading="eager">
+        <div class="card-content">
+          <div class="main-heading-container">
             <span class="main-title heading-1">Justin Cheong</span>
             <div class="social-media-container">
               <a mat-button (click)="openLink('https://www.instagram.com/jacheong_91/', '_blank')">
@@ -12,19 +13,21 @@
                 <img class="social-media-profile" src="assets/images/linkedin.svg" alt="Linkedin logo">
               </a>
             </div>
-            <span class="main-subtitle heading-4">UI Engineer at Cority with a passion for development in modern web technologies and weightlifting enthusiast</span>
-        </div>
-        <div class="main-body-content">
-          <app-about></app-about>
-          <div class="email-container">
-            <info-card numberofpanels="1">
-              <span class="email-form-title" slot="title-0">
-                Contact Me
-              </span>
-              <email-form-element slot="body-0"></email-form-element>
-            </info-card>
+            <span class="main-subtitle heading-4">UI Engineer at Cority with a passion for development in modern web
+              technologies and weightlifting enthusiast</span>
+          </div>
+          <div class="main-body-content">
+            <app-about></app-about>
+            <div class="email-container">
+              <info-card numberofpanels="1">
+                <span class="email-form-title" slot="title-0">
+                  Contact Me
+                </span>
+                <email-form-element slot="body-0"></email-form-element>
+              </info-card>
+            </div>
           </div>
         </div>
-    </div>
-    </app-card>
+      </div>
+    </info-card>
 </div>
